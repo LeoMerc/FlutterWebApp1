@@ -56,6 +56,19 @@ class _TableDesktopMenu extends StatelessWidget {
             },
             color: Colors.black,
           ),
+
+          SizedBox(
+            width: 10,
+          ),
+          CustomFlatButton(
+            text: 'Stateful100',
+            onPressed: () {
+              locator<NavigationService>().navigateTo('/stateful/100');
+
+              // Navi gator.pushNamed(context, '/abc');
+            },
+            color: Colors.black,
+          ),
         ],
       ),
     );
@@ -100,6 +113,20 @@ class _MobileMenu extends StatelessWidget {
             text: 'Otra pagina',
             onPressed: () {
               locator<NavigationService>().navigateTo('/abc');
+
+              // Navi gator.pushNamed(context, '/abc');
+            },
+            color: Colors.black,
+          ),
+
+          
+          SizedBox(
+            width: 10,
+          ),
+          CustomFlatButton(
+            text: 'Stateful100',
+            onPressed: () {
+              locator<NavigationService>().navigateTo('/stateful/100');
 
               // Navi gator.pushNamed(context, '/abc');
             },

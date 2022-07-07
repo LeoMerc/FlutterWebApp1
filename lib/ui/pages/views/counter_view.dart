@@ -3,13 +3,30 @@ import 'package:flutter_web/ui/pages/shared/custom_app_menu.dart';
 import 'package:flutter_web/ui/pages/shared/custom_flat_button.dart';
 
 class CounterView extends StatefulWidget {
+  final String base;
+
+   CounterView({required this.base});
+
   @override
   _CounterViewState createState() => _CounterViewState();
 }
 
 class _CounterViewState extends State<CounterView> {
-  int counter = 0;
 
+  int counter = 0;
+ @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    if(int.tryParse(widget.base) != null){
+    counter = int.parse(widget.base);
+
+    }
+
+    else{
+      counter = 4;
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return  Column(

@@ -69,6 +69,21 @@ class _TableDesktopMenu extends StatelessWidget {
             },
             color: Colors.black,
           ),
+
+          SizedBox(
+            width: 10,
+          ),
+          CustomFlatButton(
+            text: 'Provider200',
+            onPressed: () {
+              locator<NavigationService>().navigateTo('/provider?q=200');
+
+              // Navi gator.pushNamed(context, '/abc');
+            },
+            color: Colors.black,
+          ),
+
+
         ],
       ),
     );

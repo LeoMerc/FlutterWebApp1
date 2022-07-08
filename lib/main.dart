@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:flutter_web/router/route_generator.dart';
 import 'package:flutter_web/router/router.dart';
 import 'package:flutter_web/services/navigation_service.dart';
